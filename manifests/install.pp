@@ -29,13 +29,16 @@ class pelican::install (
   String $python_version,
   Array $prerequisites,
   String $package,
+  String $pip_url,
   ) {
 
   package {$prerequisites:
     ensure => present,
   }
 
-  pelican::pip { $python_version: }
+  pelican::pip { $python_version:
+    pip_url => $pip_url,
+  }
 
   # Install pelican
   package {$package:
