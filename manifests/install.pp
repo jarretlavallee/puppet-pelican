@@ -38,7 +38,7 @@ class pelican::install (
   pelican::pip { $python_version: }
 
   # Install pelican
-  package {$packge:
+  package {$package:
     ensure   => latest,
     provider => pip,
   }
