@@ -28,6 +28,7 @@
 class pelican::install (
   String $python_version,
   Array $prerequisites,
+  String $package,
   ) {
 
   package {$prerequisites:
@@ -37,7 +38,7 @@ class pelican::install (
   pelican::pip { $python_version: }
 
   # Install pelican
-  package {'pelican':
+  package {$packge:
     ensure   => latest,
     provider => pip,
   }
