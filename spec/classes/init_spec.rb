@@ -1,6 +1,6 @@
 require 'spec_helper'
-describe 'skel' do
-  let(:title) { 'skel' }
+describe 'pelican' do
+  let(:title) { 'pelican' }
   on_supported_os.each do |os, facts|
     context "on #{os}" do
       let(:facts) do

@@ -1,4 +1,4 @@
-# Class: skel
+# Class: pelican
 # ===========================
 #
 # Description of the module
@@ -25,6 +25,6 @@
 #
 # Copyright 2017 Jarret Lavallee, unless otherwise noted.
 #
-class skel () {
+class pelican () {
 
 }

@@ -1,5 +1,5 @@
 fixtures:
   symlinks:
-    skel: "#{source_dir}"
+    pelican: "#{source_dir}"
   forge_modules:
     stdlib: "puppetlabs/stdlib"

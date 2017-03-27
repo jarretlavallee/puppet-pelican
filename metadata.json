@@ -1,12 +1,12 @@
 {
-  "name": "jarretlavallee-skel",
+  "name": "jarretlavallee-pelican",
   "version": "0.1.0",
   "author": "jarretlavallee",
-  "summary": "Skeleton Module",
+  "summary": "Module that deploys pelican blogs",
   "license": "Apache-2.0",
-  "source": "https://github.com/jarretlavallee/puppet-skel.git",
-  "project_page": "https://github.com/jarretlavallee/puppet-skel",
-  "issues_url": "https://github.com/jarretlavallee/puppet-skel",
+  "source": "https://github.com/jarretlavallee/puppet-pelican.git",
+  "project_page": "https://github.com/jarretlavallee/puppet-pelican",
+  "issues_url": "https://github.com/jarretlavallee/puppet-pelican",
   "dependencies": [
     {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
   ],
