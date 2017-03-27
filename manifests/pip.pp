@@ -1,7 +1,7 @@
 define pelican::pip (
+  String $pip_url,
   String $python_version = $title,
   ){
-  $pip_url = 'https://bootstrap.pypa.io/get-pip.py'
 
   Exec {
     path    => ['/usr/bin', '/usr/local/bin', '/bin/'],
@@ -13,5 +13,4 @@ define pelican::pip (
     unless  => "which pip${python_version}",
     onlyif  => "which python${python_version}",
   }
-
 }

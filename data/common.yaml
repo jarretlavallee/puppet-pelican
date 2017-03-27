@@ -4,3 +4,4 @@ pelican::prerequisites:
   - python
   - curl
 pelican::python_version: '2.7'
+pelican::pip::pip_url: 'https://bootstrap.pypa.io/get-pip.py'
