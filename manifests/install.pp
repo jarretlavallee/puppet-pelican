@@ -1,4 +1,4 @@
-# Class: pelican
+# Class: pelican::install
 # ===========================
 #
 # This class installs the prerequisites for deploying a pelican blog.
@@ -25,10 +25,21 @@
 #
 # Copyright 2017 Jarret Lavallee, unless otherwise noted.
 #
-class pelican (
-
+class pelican::install (
+  String $python_version,
+  Array $prerequisites,
   ) {
 
-  include pelican::install
+  package {$prerequisites:
+    ensure => present,
+  }
+
+  pelican::pip { $python_version: }
+
+  # Install pelican
+  package {'pelican':
+    ensure   => latest,
+    provider => pip,
+  }
 
 }

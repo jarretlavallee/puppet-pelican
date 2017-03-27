@@ -1,0 +1,6 @@
+---
+pelican::package: 'pelican'
+pelican::prerequisites:
+  - python
+  - curl
+pelican::python_version: '2.7'
