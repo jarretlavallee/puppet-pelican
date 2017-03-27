@@ -1,0 +1,24 @@
+{
+  "name": "jarretlavallee-skel",
+  "version": "0.1.0",
+  "author": "jarretlavallee",
+  "summary": "Skeleton Module",
+  "license": "Apache-2.0",
+  "source": "https://github.com/jarretlavallee/puppet-skel.git",
+  "project_page": "https://github.com/jarretlavallee/puppet-skel",
+  "issues_url": "https://github.com/jarretlavallee/puppet-skel",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem":"RedHat",
+      "operatingsystemrelease":[ "6.0", "7.0" ]
+     },
+     {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [ "14.04", "16.04" ]
+     }
+    ],
+  "data_provider": "hiera"
+}
